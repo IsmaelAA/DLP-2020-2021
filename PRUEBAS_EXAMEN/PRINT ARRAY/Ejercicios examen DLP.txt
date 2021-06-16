@@ -1,0 +1,65 @@
+Ejercicio 1:
+
+Implementar print para array, pero solo de carácteres (Tipo Char). 
+En caso de que a un print se le pase un array de otro tipo diferente,
+este tendrá que dar un error de compilación. 
+Este print se encargará de recorrer todos los elementos del Array e imprimir su valor,
+de manera que si antes se hacía:
+
+print array[0], array[1], array[2], ... array[n];
+
+Ahora podemos simplificarlo escribiendo:
+
+print array;
+
+Ej programa válido:
+
+prueba[3]:char;
+
+prueba[0] = 'a';
+prueba[1] = 'b';
+prueba[2] = 'c';
+
+print prueba;
+
+Ej programa inválido:
+
+
+prueba[3]: int;
+pruebaDouble[2]: double;
+
+print prueba;
+print pruebaDouble;
+
+
+
+Ejercicio 2: Con lo anterior ya implementado, permitir que se puedan asignar arrays de caracteres 
+a otros arrays de caracteres, para ello tomar las siguientes consideraciones:
+	- El array de origen, (el de la derecha), ha de tener mayor o igual tamaño que el array de 
+destino(el de la izquierda), en caso contrario se producirá un error. En el caso de que el array 	de origen tenga 
+más tamaño que el de destino, se copiarán unicamente aquellos caracteres correspondientes a las 
+ primeras posiciones del array.
+
+
+Ej:
+
+prueba[3]:char;
+
+prueba[0] = 'a';
+prueba[1] = 'b';
+prueba[2] = 'c';
+
+print prueba; //Imprimiria abc
+
+otra[3]:char;
+
+otra[0] = 'd';
+otra[1] = 'e';
+otra[2] = 'f';
+
+print otra; //Imprimiria def
+
+prueba = otra
+
+print prueba; //Imprimiria def
+print otra; //Imprimiria def

@@ -1,0 +1,58 @@
+#source "doWhile.txt"
+call main
+halt
+#line 1
+main:
+enter 2
+#line 3
+pusha BP
+push -2
+add
+pushi 10
+storei
+#line 7
+doWhile0:
+#line 5
+pusha BP
+push -2
+add
+loadi
+outi
+pushb 10
+outb
+#line 6
+pusha BP
+push -2
+add
+pusha BP
+push -2
+add
+loadi
+pushi 1
+subi
+storei
+pusha BP
+push -2
+add
+loadi
+pushi 0
+gti
+jnz doWhile0
+#line 12
+doWhile1:
+#line 11
+pusha BP
+push -2
+add
+loadi
+outi
+pushb 10
+outb
+pusha BP
+push -2
+add
+loadi
+pushi 0
+gti
+jnz doWhile1
+ret 0, 2, 0

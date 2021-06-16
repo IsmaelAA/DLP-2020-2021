@@ -1,0 +1,14 @@
+main(){
+var i:int;
+i=10;
+do{
+	println i;
+	i=i-1;
+}while(i>0);
+
+
+do{
+	println i;
+}while(i>0);
+
+}

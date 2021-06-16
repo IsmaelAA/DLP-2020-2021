@@ -1,0 +1,25 @@
+main() {
+var a:int;
+var b:int;
+var c:int;
+
+a=1;
+b=2;
+c=3;
+if(a>b ^^ a>c){
+	println a;
+	}
+	else{
+	println b;
+}
+
+if(a<b ^^ a>c){
+	println a;
+	}
+	else{
+	println b;
+}
+
+
+}
+

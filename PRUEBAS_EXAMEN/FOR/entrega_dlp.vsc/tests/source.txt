@@ -1,0 +1,23 @@
+var a:int;
+var b:char;
+
+var c:[5] float;
+var h:[3][2] float;  
+
+struct Direccion {
+	portal:int;
+	codigoPostal:int;
+};
+
+dobleSuma(a:int, b:int): int {
+	var local:int;
+
+	local = (a + b) * 2;
+	return local * 2;
+}
+
+main() {
+  var local: int;
+  var pepe: Persona;
+  var v:[10] int;
+}

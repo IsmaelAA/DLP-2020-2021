@@ -1,0 +1,10 @@
+var prueba:[3] char;
+
+main() {
+prueba[0] = 'a';
+prueba[1] = 'b';
+prueba[2] = 'c';
+
+print prueba;
+
+}

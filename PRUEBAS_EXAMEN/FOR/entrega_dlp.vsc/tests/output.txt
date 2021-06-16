@@ -1,0 +1,34 @@
+#source "forPrueba.txt"
+call main
+halt
+#GLOBAL i:int
+#line 2
+main:
+enter 0
+#line 3
+#line 3
+pusha 0
+pushi 0
+storei
+for0:
+pusha 0
+loadi
+pushi 10
+lti
+jz finFor0
+#line 4
+pusha 0
+loadi
+outi
+pushb 10
+outb
+#line 3
+pusha 0
+pusha 0
+loadi
+pushi 1
+addi
+storei
+jmp for0
+finFor0:
+ret 0, 0, 0

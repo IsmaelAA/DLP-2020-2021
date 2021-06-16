@@ -1,0 +1,6 @@
+var prueba:[3] int;
+var pruebaDouble:[2] float;
+main() {
+print prueba;
+print pruebaDouble;
+}

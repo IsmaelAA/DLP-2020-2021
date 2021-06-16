@@ -1,0 +1,264 @@
+#source "ArrayAsignacion.txt"
+call main
+halt
+#line 1
+main:
+enter 7
+#line 5
+pusha BP
+push -3
+add
+push 1
+pushi 0
+mul
+add
+pushb 97
+storeb
+#line 6
+pusha BP
+push -3
+add
+push 1
+pushi 1
+mul
+add
+pushb 98
+storeb
+#line 7
+pusha BP
+push -3
+add
+push 1
+pushi 2
+mul
+add
+pushb 99
+storeb
+#line 9
+pusha BP
+push -3
+add
+push 1
+pushi 0
+mul
+add
+loadb
+outb
+pusha BP
+push -3
+add
+push 1
+pushi 1
+mul
+add
+loadb
+outb
+pusha BP
+push -3
+add
+push 1
+pushi 2
+mul
+add
+loadb
+outb
+pushb 10
+outb
+#line 10
+pusha BP
+push -7
+add
+push 1
+pushi 0
+mul
+add
+pushb 100
+storeb
+#line 11
+pusha BP
+push -7
+add
+push 1
+pushi 1
+mul
+add
+pushb 101
+storeb
+#line 12
+pusha BP
+push -7
+add
+push 1
+pushi 2
+mul
+add
+pushb 102
+storeb
+#line 13
+pusha BP
+push -7
+add
+push 1
+pushi 3
+mul
+add
+pushb 72
+storeb
+#line 15
+pusha BP
+push -7
+add
+push 1
+pushi 0
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 1
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 2
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 3
+mul
+add
+loadb
+outb
+pushb 10
+outb
+#line 17
+pusha BP
+push -3
+add
+push 1
+pushi 0
+mul
+add
+pusha BP
+push -7
+add
+push 1
+pushi 0
+mul
+add
+loadb
+storeb
+pusha BP
+push -3
+add
+push 1
+pushi 1
+mul
+add
+pusha BP
+push -7
+add
+push 1
+pushi 1
+mul
+add
+loadb
+storeb
+pusha BP
+push -3
+add
+push 1
+pushi 2
+mul
+add
+pusha BP
+push -7
+add
+push 1
+pushi 2
+mul
+add
+loadb
+storeb
+#line 19
+pusha BP
+push -3
+add
+push 1
+pushi 0
+mul
+add
+loadb
+outb
+pusha BP
+push -3
+add
+push 1
+pushi 1
+mul
+add
+loadb
+outb
+pusha BP
+push -3
+add
+push 1
+pushi 2
+mul
+add
+loadb
+outb
+pushb 10
+outb
+#line 20
+pusha BP
+push -7
+add
+push 1
+pushi 0
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 1
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 2
+mul
+add
+loadb
+outb
+pusha BP
+push -7
+add
+push 1
+pushi 3
+mul
+add
+loadb
+outb
+pushb 10
+outb
+ret 0, 7, 0

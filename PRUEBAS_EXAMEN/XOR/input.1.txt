@@ -1,0 +1,44 @@
+"""
+Modificar el compilador de Pmm para modificar los operadores logicos
+	- Añadir el operador OR exclusivo XOR (^), que a diferencia del or normal, cuando ambos operandos son verdaderos el resultado es falso.
+	- Modificar el operador logico AND, para que sea evaluado en corto circuito, donde el segundo operando no se evalua si el primero es falso.
+"""
+
+def check(i:int): int
+{
+    print 'C','h','e','c','k','\n';
+    return i;
+}
+
+def right(): {
+    a,b:int;
+    a = 1;
+    b = 1;
+    if a ^ b:
+        print 'T','r','u','e','\n';
+    else
+        print 'F','a','l','s','e','\n';         # False
+
+    if a && check(b):                           # Check
+        print 'T','r','u','e','\n';             # True
+    else
+        print 'F','a','l','s','e','\n';
+
+    if !a && check(b):
+            print 'T','r','u','e','\n';
+        else
+            print 'F','a','l','s','e','\n';     # False
+}
+
+"""
+def wrong(): {
+    print 1.0 ^ 0.0;                            # Compilation error
+    print '0' ^ '1';                            # Compilation error
+}
+"""
+
+
+def main(): {
+   right();
+}
+	

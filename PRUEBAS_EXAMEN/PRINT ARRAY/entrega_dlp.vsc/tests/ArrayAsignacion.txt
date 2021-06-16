@@ -1,0 +1,21 @@
+main() {
+var prueba:[3] char;
+var otra:[4] char;
+
+prueba[0] = 'a';
+prueba[1] = 'b';
+prueba[2] = 'c';
+
+println prueba; //Imprimiria abc
+otra[0] = 'd';
+otra[1] = 'e';
+otra[2] = 'f';
+otra[3] = 'H';
+
+println otra; //Imprimiria def
+
+prueba = otra;
+
+println prueba; //Imprimiria def
+println otra; //Imprimiria def
+}

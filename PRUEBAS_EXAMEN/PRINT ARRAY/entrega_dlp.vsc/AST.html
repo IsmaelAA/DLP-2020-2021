@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #bebdbd; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Program &rarr;                                                   <span class="pos">1:1  20:12   </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">println otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  </span>definition  <span class="type">List&lt;Definition&gt;</span> = 
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">1:1  20:12   </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">println otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  </span>"<span class="value">main</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  </span><span class="null">null</span>  type:<span class="type">Type</span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">2:5  2:13    </span><span class="sourceText">var </span><span class="posText">prueba:[3</span><span class="sourceText">] char;</span>
+<span class="dots">.  .  |  .  |  </span>ArrayType &rarr;                                  <span class="pos">2:13  2:13   </span><span class="sourceText">var prueba:[</span><span class="posText">3</span><span class="sourceText">] char;</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">3</span>"  
+<span class="dots">.  .  |  .  |  .  </span><span class="value">CharType</span> &rarr;                                <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">prueba</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-3</span>  <span class="type">{position:3, type:{CharType}}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">3:5  3:11    </span><span class="sourceText">var </span><span class="posText">otra:[4</span><span class="sourceText">] char;</span>
+<span class="dots">.  .  |  .  |  </span>ArrayType &rarr;                                  <span class="pos">3:11  3:11   </span><span class="sourceText">var otra:[</span><span class="posText">4</span><span class="sourceText">] char;</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">4</span>"  
+<span class="dots">.  .  |  .  |  .  </span><span class="value">CharType</span> &rarr;                                <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">otra</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-7</span>  <span class="type">{position:4, type:{CharType}}</span>
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">5:1  5:15    </span><span class="sourceText"></span><span class="posText">prueba[0] = 'a'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">5:1  5:8     </span><span class="sourceText"></span><span class="posText">prueba[0</span><span class="sourceText">] = 'a';</span>
+<span class="dots">.  .  |  .  |  .  </span>"prueba"  <span class="type">IdentConstant.value</span>             <span class="pos">5:1  5:6     </span><span class="sourceText"></span><span class="posText">prueba</span><span class="sourceText">[0] = 'a';</span>
+<span class="dots">.  .  |  .  |  .  </span>"0"  <span class="type">IntConstant.value</span>                    <span class="pos">5:8  5:8     </span><span class="sourceText">prueba[</span><span class="posText">0</span><span class="sourceText">] = 'a';</span>
+<span class="dots">.  .  |  .  |  </span>"'a'"  <span class="type">CharConstant.value</span>                    <span class="pos">5:13  5:15   </span><span class="sourceText">prueba[0] = </span><span class="posText">'a'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">6:1  6:15    </span><span class="sourceText"></span><span class="posText">prueba[1] = 'b'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">6:1  6:8     </span><span class="sourceText"></span><span class="posText">prueba[1</span><span class="sourceText">] = 'b';</span>
+<span class="dots">.  .  |  .  |  .  </span>"prueba"  <span class="type">IdentConstant.value</span>             <span class="pos">6:1  6:6     </span><span class="sourceText"></span><span class="posText">prueba</span><span class="sourceText">[1] = 'b';</span>
+<span class="dots">.  .  |  .  |  .  </span>"1"  <span class="type">IntConstant.value</span>                    <span class="pos">6:8  6:8     </span><span class="sourceText">prueba[</span><span class="posText">1</span><span class="sourceText">] = 'b';</span>
+<span class="dots">.  .  |  .  |  </span>"'b'"  <span class="type">CharConstant.value</span>                    <span class="pos">6:13  6:15   </span><span class="sourceText">prueba[1] = </span><span class="posText">'b'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">7:1  7:15    </span><span class="sourceText"></span><span class="posText">prueba[2] = 'c'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">7:1  7:8     </span><span class="sourceText"></span><span class="posText">prueba[2</span><span class="sourceText">] = 'c';</span>
+<span class="dots">.  .  |  .  |  .  </span>"prueba"  <span class="type">IdentConstant.value</span>             <span class="pos">7:1  7:6     </span><span class="sourceText"></span><span class="posText">prueba</span><span class="sourceText">[2] = 'c';</span>
+<span class="dots">.  .  |  .  |  .  </span>"2"  <span class="type">IntConstant.value</span>                    <span class="pos">7:8  7:8     </span><span class="sourceText">prueba[</span><span class="posText">2</span><span class="sourceText">] = 'c';</span>
+<span class="dots">.  .  |  .  |  </span>"'c'"  <span class="type">CharConstant.value</span>                    <span class="pos">7:13  7:15   </span><span class="sourceText">prueba[2] = </span><span class="posText">'c'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">9:9  9:14    </span><span class="sourceText">println </span><span class="posText">prueba</span><span class="sourceText">; //Imprimiria abc</span>
+<span class="dots">.  .  |  .  |  </span>"prueba"  <span class="type">IdentConstant.value</span>                <span class="pos">9:9  9:14    </span><span class="sourceText">println </span><span class="posText">prueba</span><span class="sourceText">; //Imprimiria abc</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">10:1  10:13  </span><span class="sourceText"></span><span class="posText">otra[0] = 'd'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">10:1  10:6   </span><span class="sourceText"></span><span class="posText">otra[0</span><span class="sourceText">] = 'd';</span>
+<span class="dots">.  .  |  .  |  .  </span>"otra"  <span class="type">IdentConstant.value</span>               <span class="pos">10:1  10:4   </span><span class="sourceText"></span><span class="posText">otra</span><span class="sourceText">[0] = 'd';</span>
+<span class="dots">.  .  |  .  |  .  </span>"0"  <span class="type">IntConstant.value</span>                    <span class="pos">10:6  10:6   </span><span class="sourceText">otra[</span><span class="posText">0</span><span class="sourceText">] = 'd';</span>
+<span class="dots">.  .  |  .  |  </span>"'d'"  <span class="type">CharConstant.value</span>                    <span class="pos">10:11  10:13 </span><span class="sourceText">otra[0] = </span><span class="posText">'d'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">11:1  11:13  </span><span class="sourceText"></span><span class="posText">otra[1] = 'e'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">11:1  11:6   </span><span class="sourceText"></span><span class="posText">otra[1</span><span class="sourceText">] = 'e';</span>
+<span class="dots">.  .  |  .  |  .  </span>"otra"  <span class="type">IdentConstant.value</span>               <span class="pos">11:1  11:4   </span><span class="sourceText"></span><span class="posText">otra</span><span class="sourceText">[1] = 'e';</span>
+<span class="dots">.  .  |  .  |  .  </span>"1"  <span class="type">IntConstant.value</span>                    <span class="pos">11:6  11:6   </span><span class="sourceText">otra[</span><span class="posText">1</span><span class="sourceText">] = 'e';</span>
+<span class="dots">.  .  |  .  |  </span>"'e'"  <span class="type">CharConstant.value</span>                    <span class="pos">11:11  11:13 </span><span class="sourceText">otra[1] = </span><span class="posText">'e'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">12:1  12:13  </span><span class="sourceText"></span><span class="posText">otra[2] = 'f'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">12:1  12:6   </span><span class="sourceText"></span><span class="posText">otra[2</span><span class="sourceText">] = 'f';</span>
+<span class="dots">.  .  |  .  |  .  </span>"otra"  <span class="type">IdentConstant.value</span>               <span class="pos">12:1  12:4   </span><span class="sourceText"></span><span class="posText">otra</span><span class="sourceText">[2] = 'f';</span>
+<span class="dots">.  .  |  .  |  .  </span>"2"  <span class="type">IntConstant.value</span>                    <span class="pos">12:6  12:6   </span><span class="sourceText">otra[</span><span class="posText">2</span><span class="sourceText">] = 'f';</span>
+<span class="dots">.  .  |  .  |  </span>"'f'"  <span class="type">CharConstant.value</span>                    <span class="pos">12:11  12:13 </span><span class="sourceText">otra[2] = </span><span class="posText">'f'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">13:1  13:13  </span><span class="sourceText"></span><span class="posText">otra[3] = 'H'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>Array &rarr;                                      <span class="pos">13:1  13:6   </span><span class="sourceText"></span><span class="posText">otra[3</span><span class="sourceText">] = 'H';</span>
+<span class="dots">.  .  |  .  |  .  </span>"otra"  <span class="type">IdentConstant.value</span>               <span class="pos">13:1  13:4   </span><span class="sourceText"></span><span class="posText">otra</span><span class="sourceText">[3] = 'H';</span>
+<span class="dots">.  .  |  .  |  .  </span>"3"  <span class="type">IntConstant.value</span>                    <span class="pos">13:6  13:6   </span><span class="sourceText">otra[</span><span class="posText">3</span><span class="sourceText">] = 'H';</span>
+<span class="dots">.  .  |  .  |  </span>"'H'"  <span class="type">CharConstant.value</span>                    <span class="pos">13:11  13:13 </span><span class="sourceText">otra[3] = </span><span class="posText">'H'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">15:9  15:12  </span><span class="sourceText">println </span><span class="posText">otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"otra"  <span class="type">IdentConstant.value</span>                  <span class="pos">15:9  15:12  </span><span class="sourceText">println </span><span class="posText">otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">17:1  17:13  </span><span class="sourceText"></span><span class="posText">prueba = otra</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"prueba"  <span class="type">IdentConstant.value</span>                <span class="pos">17:1  17:6   </span><span class="sourceText"></span><span class="posText">prueba</span><span class="sourceText"> = otra;</span>
+<span class="dots">.  .  |  .  |  </span>"otra"  <span class="type">IdentConstant.value</span>                  <span class="pos">17:10  17:13 </span><span class="sourceText">prueba = </span><span class="posText">otra</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">19:9  19:14  </span><span class="sourceText">println </span><span class="posText">prueba</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"prueba"  <span class="type">IdentConstant.value</span>                <span class="pos">19:9  19:14  </span><span class="sourceText">println </span><span class="posText">prueba</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">20:9  20:12  </span><span class="sourceText">println </span><span class="posText">otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"otra"  <span class="type">IdentConstant.value</span>                  <span class="pos">20:9  20:12  </span><span class="sourceText">println </span><span class="posText">otra</span><span class="sourceText">; //Imprimiria def</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>

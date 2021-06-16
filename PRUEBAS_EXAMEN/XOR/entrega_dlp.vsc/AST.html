@@ -1,0 +1,143 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #bebdbd; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Program &rarr;                                                   <span class="pos">1:1  30:10   </span><span class="sourceText"></span><span class="posText">check():int {</span><span class="sourceText"> ... </span><span class="posText">println c</span><span class="sourceText">;</span>
+<span class="dots">.  </span>definition  <span class="type">List&lt;Definition&gt;</span> = 
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">1:1  3:8     </span><span class="sourceText"></span><span class="posText">check():int {</span><span class="sourceText"> ... </span><span class="posText">return 1</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  </span>"<span class="value">check</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  </span><span class="value">IntType</span> &rarr;                                          <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">2:9  2:11    </span><span class="sourceText">println </span><span class="posText">'T'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"'T'"  <span class="type">CharConstant.value</span>                    <span class="pos">2:9  2:11    </span><span class="sourceText">println </span><span class="posText">'T'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Return &rarr;                                        <span class="pos">3:8  3:8     </span><span class="sourceText">return </span><span class="posText">1</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"1"  <span class="type">IntConstant.value</span>                       <span class="pos">3:8  3:8     </span><span class="sourceText">return </span><span class="posText">1</span><span class="sourceText">;</span>
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">6:1  30:10   </span><span class="sourceText"></span><span class="posText">main() {</span><span class="sourceText"> ... </span><span class="posText">println c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  </span>"<span class="value">main</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  </span><span class="null">null</span>  type:<span class="type">Type</span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">7:5  7:5     </span><span class="sourceText">var </span><span class="posText">a</span><span class="sourceText">:int;</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">a</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-2</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">8:5  8:5     </span><span class="sourceText">var </span><span class="posText">b</span><span class="sourceText">:int;</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">b</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-4</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">9:5  9:5     </span><span class="sourceText">var </span><span class="posText">c</span><span class="sourceText">:int;</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">c</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-6</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">11:1  11:3   </span><span class="sourceText"></span><span class="posText">a=1</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"a"  <span class="type">IdentConstant.value</span>                     <span class="pos">11:1  11:1   </span><span class="sourceText"></span><span class="posText">a</span><span class="sourceText">=1;</span>
+<span class="dots">.  .  |  .  |  </span>"1"  <span class="type">IntConstant.value</span>                       <span class="pos">11:3  11:3   </span><span class="sourceText">a=</span><span class="posText">1</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">12:1  12:3   </span><span class="sourceText"></span><span class="posText">b=2</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>                     <span class="pos">12:1  12:1   </span><span class="sourceText"></span><span class="posText">b</span><span class="sourceText">=2;</span>
+<span class="dots">.  .  |  .  |  </span>"2"  <span class="type">IntConstant.value</span>                       <span class="pos">12:3  12:3   </span><span class="sourceText">b=</span><span class="posText">2</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>Assignment &rarr;                                    <span class="pos">13:1  13:3   </span><span class="sourceText"></span><span class="posText">c=3</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"c"  <span class="type">IdentConstant.value</span>                     <span class="pos">13:1  13:1   </span><span class="sourceText"></span><span class="posText">c</span><span class="sourceText">=3;</span>
+<span class="dots">.  .  |  .  |  </span>"3"  <span class="type">IntConstant.value</span>                       <span class="pos">13:3  13:3   </span><span class="sourceText">c=</span><span class="posText">3</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  </span>If &rarr;                                            <span class="pos">15:4  18:10  </span><span class="sourceText">if(</span><span class="posText">a>b && check()>0){</span><span class="sourceText"> ... </span><span class="posText">println b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>ExpresionLogica &rarr;                            <span class="pos">15:4  15:19  </span><span class="sourceText">if(</span><span class="posText">a>b && check()>0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  </span>ExpresionCondicion &rarr;                      <span class="pos">15:4  15:6   </span><span class="sourceText">if(</span><span class="posText">a>b</span><span class="sourceText"> && check()>0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"a"  <span class="type">IdentConstant.value</span>               <span class="pos">15:4  15:4   </span><span class="sourceText">if(</span><span class="posText">a</span><span class="sourceText">>b && check()>0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">></span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>               <span class="pos">15:6  15:6   </span><span class="sourceText">if(a></span><span class="posText">b</span><span class="sourceText"> && check()>0){</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">&&</span>"  
+<span class="dots">.  .  |  .  |  .  </span>ExpresionCondicion &rarr;                      <span class="pos">15:11  15:19 </span><span class="sourceText">if(a>b && </span><span class="posText">check()>0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>FuncCallExpr &rarr;                         <span class="pos">15:11  15:15 </span><span class="sourceText">if(a>b && </span><span class="posText">check</span><span class="sourceText">()>0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>"<span class="value">check</span>"  
+<span class="dots">.  .  |  .  |  .  |  .  </span>expression  <span class="type">List&lt;Expression&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">></span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>"0"  <span class="type">IntConstant.value</span>                 <span class="pos">15:19  15:19 </span><span class="sourceText">if(a>b && check()></span><span class="posText">0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  </span>if_true  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">16:10  16:10 </span><span class="sourceText">println </span><span class="posText">a</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"a"  <span class="type">IdentConstant.value</span>               <span class="pos">16:10  16:10 </span><span class="sourceText">println </span><span class="posText">a</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  |  </span>if_false  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">18:10  18:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>               <span class="pos">18:10  18:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>If &rarr;                                            <span class="pos">21:4  24:10  </span><span class="sourceText">if(</span><span class="posText">a<b && check()<0){</span><span class="sourceText"> ... </span><span class="posText">println a</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>ExpresionLogica &rarr;                            <span class="pos">21:4  21:19  </span><span class="sourceText">if(</span><span class="posText">a<b && check()<0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  </span>ExpresionCondicion &rarr;                      <span class="pos">21:4  21:6   </span><span class="sourceText">if(</span><span class="posText">a<b</span><span class="sourceText"> && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"a"  <span class="type">IdentConstant.value</span>               <span class="pos">21:4  21:4   </span><span class="sourceText">if(</span><span class="posText">a</span><span class="sourceText"><b && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value"><</span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>               <span class="pos">21:6  21:6   </span><span class="sourceText">if(a<</span><span class="posText">b</span><span class="sourceText"> && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">&&</span>"  
+<span class="dots">.  .  |  .  |  .  </span>ExpresionCondicion &rarr;                      <span class="pos">21:11  21:19 </span><span class="sourceText">if(a<b && </span><span class="posText">check()<0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>FuncCallExpr &rarr;                         <span class="pos">21:11  21:15 </span><span class="sourceText">if(a<b && </span><span class="posText">check</span><span class="sourceText">()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>"<span class="value">check</span>"  
+<span class="dots">.  .  |  .  |  .  |  .  </span>expression  <span class="type">List&lt;Expression&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value"><</span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>"0"  <span class="type">IntConstant.value</span>                 <span class="pos">21:19  21:19 </span><span class="sourceText">if(a<b && check()<</span><span class="posText">0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  </span>if_true  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">22:10  22:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>               <span class="pos">22:10  22:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  |  </span>if_false  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">24:10  24:10 </span><span class="sourceText">println </span><span class="posText">a</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"a"  <span class="type">IdentConstant.value</span>               <span class="pos">24:10  24:10 </span><span class="sourceText">println </span><span class="posText">a</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>If &rarr;                                            <span class="pos">27:4  30:10  </span><span class="sourceText">if(</span><span class="posText">a<b && check()>0 && check()<0){</span><span class="sourceText"> ... </span><span class="posText">println c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>ExpresionLogica &rarr;                            <span class="pos">27:4  27:32  </span><span class="sourceText">if(</span><span class="posText">a<b && check()>0 && check()<0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  </span>ExpresionLogica &rarr;                         <span class="pos">27:4  27:19  </span><span class="sourceText">if(</span><span class="posText">a<b && check()>0</span><span class="sourceText"> && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>ExpresionCondicion &rarr;                   <span class="pos">27:4  27:6   </span><span class="sourceText">if(</span><span class="posText">a<b</span><span class="sourceText"> && check()>0 && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>"a"  <span class="type">IdentConstant.value</span>            <span class="pos">27:4  27:4   </span><span class="sourceText">if(</span><span class="posText">a</span><span class="sourceText"><b && check()>0 && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>"<span class="value"><</span>"  
+<span class="dots">.  .  |  .  |  .  |  .  </span>"b"  <span class="type">IdentConstant.value</span>            <span class="pos">27:6  27:6   </span><span class="sourceText">if(a<</span><span class="posText">b</span><span class="sourceText"> && check()>0 && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">&&</span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>ExpresionCondicion &rarr;                   <span class="pos">27:11  27:19 </span><span class="sourceText">if(a<b && </span><span class="posText">check()>0</span><span class="sourceText"> && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>FuncCallExpr &rarr;                      <span class="pos">27:11  27:15 </span><span class="sourceText">if(a<b && </span><span class="posText">check</span><span class="sourceText">()>0 && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  |  </span>"<span class="value">check</span>"  
+<span class="dots">.  .  |  .  |  .  |  .  |  </span>expression  <span class="type">List&lt;Expression&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  |  .  </span>"<span class="value">></span>"  
+<span class="dots">.  .  |  .  |  .  |  .  </span>"0"  <span class="type">IntConstant.value</span>              <span class="pos">27:19  27:19 </span><span class="sourceText">if(a<b && check()></span><span class="posText">0</span><span class="sourceText"> && check()<0){</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">&&</span>"  
+<span class="dots">.  .  |  .  |  .  </span>ExpresionCondicion &rarr;                      <span class="pos">27:24  27:32 </span><span class="sourceText">if(a<b && check()>0 && </span><span class="posText">check()<0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  .  |  </span>FuncCallExpr &rarr;                         <span class="pos">27:24  27:28 </span><span class="sourceText">if(a<b && check()>0 && </span><span class="posText">check</span><span class="sourceText">()<0){</span>
+<span class="dots">.  .  |  .  |  .  |  .  </span>"<span class="value">check</span>"  
+<span class="dots">.  .  |  .  |  .  |  .  </span>expression  <span class="type">List&lt;Expression&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value"><</span>"  
+<span class="dots">.  .  |  .  |  .  |  </span>"0"  <span class="type">IntConstant.value</span>                 <span class="pos">27:32  27:32 </span><span class="sourceText">if(a<b && check()>0 && check()<</span><span class="posText">0</span><span class="sourceText">){</span>
+<span class="dots">.  .  |  .  |  </span>if_true  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">28:10  28:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"b"  <span class="type">IdentConstant.value</span>               <span class="pos">28:10  28:10 </span><span class="sourceText">println </span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  |  </span>if_false  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  |  .  </span>Print &rarr;                                   <span class="pos">30:10  30:10 </span><span class="sourceText">println </span><span class="posText">c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"c"  <span class="type">IdentConstant.value</span>               <span class="pos">30:10  30:10 </span><span class="sourceText">println </span><span class="posText">c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  |  </span>"<span class="value">ln</span>"  
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>
