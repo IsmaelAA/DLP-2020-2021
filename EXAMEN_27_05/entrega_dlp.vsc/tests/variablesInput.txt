@@ -1,0 +1,11 @@
+main(){
+var a:int = 1;
+var b:float = 2.0;
+var c:char = 'c';
+
+
+println a;
+println b;
+println c;
+
+}

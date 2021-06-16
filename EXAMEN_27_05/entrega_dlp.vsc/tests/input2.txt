@@ -1,0 +1,19 @@
+f(i:int){
+	var z:int = g();
+	var c:char = i();
+	var d1:float = d2;
+	var d2:float = 3;
+	
+}
+
+g(c:char):float{
+	var a:int = f(1);
+	return 8.0;
+}
+
+main(){
+	var d:float = g(3.3);
+	var j:int = d[3];
+	var k:int = j.campo;
+
+}

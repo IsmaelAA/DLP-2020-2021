@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+.value { font-weight: bold; }
+.dots { color: #bebdbd; }
+.type { color: #BBBBBB; }
+.pos { color: #CCCCCC; }
+.sourceText { color: #BBBBBB; }
+.posText {
+	color: #BBBBBB;
+	text-decoration: underline; font-weight: bold;
+}
+.null {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body><pre>
+[ASTPrinter] -------------------------------- line:col  line:col
+
+<span class="dots"></span>Program &rarr;                                                   <span class="pos">1:1  21:10   </span><span class="sourceText"></span><span class="posText">doble(n:int):int{</span><span class="sourceText"> ... </span><span class="posText">println d</span><span class="sourceText">;</span>
+<span class="dots">.  </span>definition  <span class="type">List&lt;Definition&gt;</span> = 
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">1:1  2:11    </span><span class="sourceText"></span><span class="posText">doble(n:int):int{</span><span class="sourceText"> ... </span><span class="posText">return n*2</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  </span>"<span class="value">doble</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Param &rarr;                                         <span class="pos">1:7  1:7     </span><span class="sourceText">doble(</span><span class="posText">n</span><span class="sourceText">:int):int{</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">n</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span><span class="value">4</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  </span><span class="value">IntType</span> &rarr;                                          <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Return &rarr;                                        <span class="pos">2:9  2:11    </span><span class="sourceText">return </span><span class="posText">n*2</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>ExpresionAritmetica &rarr;                        <span class="pos">2:9  2:11    </span><span class="sourceText">return </span><span class="posText">n*2</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  </span>"n"  <span class="type">IdentConstant.value</span>                  <span class="pos">2:9  2:9     </span><span class="sourceText">return </span><span class="posText">n</span><span class="sourceText">*2;</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">*</span>"  
+<span class="dots">.  .  |  .  |  .  </span>"2"  <span class="type">IntConstant.value</span>                    <span class="pos">2:11  2:11   </span><span class="sourceText">return n*</span><span class="posText">2</span><span class="sourceText">;</span>
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">5:1  7:11    </span><span class="sourceText"></span><span class="posText">f(a:float,b:float):float{</span><span class="sourceText"> ... </span><span class="posText">return z-b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  </span>"<span class="value">f</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Param &rarr;                                         <span class="pos">5:3  5:3     </span><span class="sourceText">f(</span><span class="posText">a</span><span class="sourceText">:float,b:float):float{</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">a</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">RealType</span> &rarr;                                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span><span class="value">8</span>  <span class="type">{RealType}</span>
+<span class="dots">.  .  |  .  </span>Param &rarr;                                         <span class="pos">5:11  5:11   </span><span class="sourceText">f(a:float,</span><span class="posText">b</span><span class="sourceText">:float):float{</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">b</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">RealType</span> &rarr;                                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span><span class="value">4</span>  <span class="type">{RealType}</span>
+<span class="dots">.  .  |  </span><span class="value">RealType</span> &rarr;                                         <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">6:6  6:36    </span><span class="sourceText">var </span><span class="posText">z:float = <float>(doble(<int>(a</span><span class="sourceText">)));</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">RealType</span> &rarr;                                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">z</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-4</span>  <span class="type">{RealType}</span>
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Return &rarr;                                        <span class="pos">7:9  7:11    </span><span class="sourceText">return </span><span class="posText">z-b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>ExpresionAritmetica &rarr;                        <span class="pos">7:9  7:11    </span><span class="sourceText">return </span><span class="posText">z-b</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  .  </span>"z"  <span class="type">IdentConstant.value</span>                  <span class="pos">7:9  7:9     </span><span class="sourceText">return </span><span class="posText">z</span><span class="sourceText">-b;</span>
+<span class="dots">.  .  |  .  |  .  </span>"<span class="value">-</span>"  
+<span class="dots">.  .  |  .  |  .  </span>"b"  <span class="type">IdentConstant.value</span>                  <span class="pos">7:11  7:11   </span><span class="sourceText">return z-</span><span class="posText">b</span><span class="sourceText">;</span>
+<span class="dots">.  .  </span>DefFuncion &rarr;                                          <span class="pos">10:1  21:10  </span><span class="sourceText"></span><span class="posText">main(){</span><span class="sourceText"> ... </span><span class="posText">println d</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  </span>"<span class="value">main</span>"  
+<span class="dots">.  .  |  </span>param  <span class="type">List&lt;Param&gt;</span> = 
+<span class="dots">.  .  |  </span><span class="null">null</span>  type:<span class="type">Type</span>
+<span class="dots">.  .  |  </span>defvariable  <span class="type">List&lt;DefVariable&gt;</span> = 
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">11:6  11:17  </span><span class="sourceText">var </span><span class="posText">c:char = 'a'</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">CharType</span> &rarr;                                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">c</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-1</span>  <span class="type">{CharType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">12:6  12:24  </span><span class="sourceText">var </span><span class="posText">i:int = 2 + doble(3</span><span class="sourceText">);</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">i</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-3</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">13:6  13:24  </span><span class="sourceText">var </span><span class="posText">j:int = i + <int>(c</span><span class="sourceText">);</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">j</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-5</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">14:6  14:26  </span><span class="sourceText">var </span><span class="posText">k:int = j - <int>(7.0</span><span class="sourceText">);</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">IntType</span> &rarr;                                    <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">k</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-7</span>  <span class="type">{IntType}</span>
+<span class="dots">.  .  |  .  </span>DefVariable &rarr;                                   <span class="pos">15:6  15:31  </span><span class="sourceText">var </span><span class="posText">d:float = f(<float>(k),1.5</span><span class="sourceText">);</span>
+<span class="dots">.  .  |  .  |  </span><span class="value">RealType</span> &rarr;                                   <span class="pos"><span class="null">null</span>  <span class="null">null</span>   </span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">d</span>"  
+<span class="dots">.  .  |  .  |  </span>"<span class="value">local</span>"  
+<span class="dots">.  .  |  .  |  </span><span class="value">-11</span>  <span class="type">{RealType}</span>
+<span class="dots">.  .  |  </span>sentence  <span class="type">List&lt;Sentence&gt;</span> = 
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">17:10  17:10 </span><span class="sourceText">println </span><span class="posText">c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"c"  <span class="type">IdentConstant.value</span>                     <span class="pos">17:10  17:10 </span><span class="sourceText">println </span><span class="posText">c</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">18:10  18:10 </span><span class="sourceText">println </span><span class="posText">i</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"i"  <span class="type">IdentConstant.value</span>                     <span class="pos">18:10  18:10 </span><span class="sourceText">println </span><span class="posText">i</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">19:10  19:10 </span><span class="sourceText">println </span><span class="posText">j</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"j"  <span class="type">IdentConstant.value</span>                     <span class="pos">19:10  19:10 </span><span class="sourceText">println </span><span class="posText">j</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">20:10  20:10 </span><span class="sourceText">println </span><span class="posText">k</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"k"  <span class="type">IdentConstant.value</span>                     <span class="pos">20:10  20:10 </span><span class="sourceText">println </span><span class="posText">k</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+<span class="dots">.  .  |  .  </span>Print &rarr;                                         <span class="pos">21:10  21:10 </span><span class="sourceText">println </span><span class="posText">d</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"d"  <span class="type">IdentConstant.value</span>                     <span class="pos">21:10  21:10 </span><span class="sourceText">println </span><span class="posText">d</span><span class="sourceText">;</span>
+<span class="dots">.  .  |  .  |  </span>"<span class="value">ln</span>"  
+
+[ASTPrinter] --------------------------------
+</pre>
+</body>
+</html>

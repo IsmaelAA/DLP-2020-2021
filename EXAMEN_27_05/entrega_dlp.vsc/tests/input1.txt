@@ -1,0 +1,23 @@
+doble(n:int):int{
+	return n*2;
+}
+
+f(a:float,b:float):float{
+	var z:float = <float>(doble(<int>(a)));
+	return z-b;
+}
+
+main(){
+	var c:char = 'a';
+	var i:int = 2 + doble(3);
+	var j:int = i + <int>(c);
+	var k:int = j - <int>(7.0);
+	var d:float = f(<float>(k),1.5);
+	
+	println c;
+	println i;
+	println j;
+	println k;
+	println d;
+	
+}

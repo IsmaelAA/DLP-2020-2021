@@ -1,0 +1,130 @@
+#source "input1.txt"
+call main
+halt
+#line 1
+doble:
+enter 0
+pusha BP
+push 4
+add
+loadi
+pushi 2
+muli
+ret 2,0,2
+#line 5
+f:
+enter 4
+pusha BP
+push -4
+add
+pusha BP
+push 8
+add
+loadf
+f2i
+call doble
+i2f
+storef
+pusha BP
+push -4
+add
+loadf
+pusha BP
+push 4
+add
+loadf
+subf
+ret 4,4,8
+#line 10
+main:
+enter 11
+pusha BP
+push -1
+add
+pushb 97
+storeb
+pusha BP
+push -3
+add
+pushi 2
+pushi 3
+call doble
+addi
+storei
+pusha BP
+push -5
+add
+pusha BP
+push -3
+add
+loadi
+pusha BP
+push -1
+add
+loadb
+b2i
+addi
+storei
+pusha BP
+push -7
+add
+pusha BP
+push -5
+add
+loadi
+pushf 7.0
+f2i
+subi
+storei
+pusha BP
+push -11
+add
+pusha BP
+push -7
+add
+loadi
+i2f
+pushf 1.5
+call f
+storef
+#line 17
+pusha BP
+push -1
+add
+loadb
+outb
+pushb 10
+outb
+#line 18
+pusha BP
+push -3
+add
+loadi
+outi
+pushb 10
+outb
+#line 19
+pusha BP
+push -5
+add
+loadi
+outi
+pushb 10
+outb
+#line 20
+pusha BP
+push -7
+add
+loadi
+outi
+pushb 10
+outb
+#line 21
+pusha BP
+push -11
+add
+loadf
+outf
+pushb 10
+outb
+ret 0, 11, 0
